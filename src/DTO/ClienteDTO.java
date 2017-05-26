@@ -17,6 +17,7 @@ public class ClienteDTO implements Serializable{
 	private String direccion;
 	private String telefono;
 	private String cuit;
+	private String mail;
 	private CuentaCorrienteDTO cc;
 	private long nroCliente;
 	
@@ -70,6 +71,12 @@ public class ClienteDTO implements Serializable{
 	}
 	public void setNroCliente(long nroCliente) {
 		this.nroCliente = nroCliente;
+	}
+	public String getMail() {
+		return mail;
+	}
+	public void setMail(String mail) {
+		this.mail = mail;
 	}
 	
 	
