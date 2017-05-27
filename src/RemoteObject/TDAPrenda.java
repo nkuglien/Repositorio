@@ -5,7 +5,7 @@ import java.rmi.RemoteException;
 
 import DTO.PrendaDTO;
 
-public interface PrendaRemote extends Remote {
+public interface TDAPrenda extends Remote {
 
 	
 	public boolean verificarPrenda(int parseInt) throws RemoteException;

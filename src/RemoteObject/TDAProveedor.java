@@ -6,7 +6,7 @@ import java.util.List;
 
 import DTO.ProveedorDTO;
 
-public interface ProveedorRemote extends Remote {
+public interface TDAProveedor extends Remote {
 
 	public boolean verificarProveedor(int parseInt) throws RemoteException;
 

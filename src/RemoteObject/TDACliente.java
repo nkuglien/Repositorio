@@ -6,7 +6,7 @@ import java.util.List;
 
 import DTO.ClienteDTO;
 
-public interface ClienteRemote extends Remote {
+public interface TDACliente extends Remote {
 
 	public List<ClienteDTO> getAllClientes() throws RemoteException;
 	

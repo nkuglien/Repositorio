@@ -2,6 +2,6 @@ package RemoteObject;
 
 import java.rmi.Remote;
 
-public interface PedidoRemote extends Remote{
+public interface TDAPedido extends Remote{
 
 }

@@ -2,6 +2,6 @@ package RemoteObject;
 
 import java.rmi.Remote;
 
-public interface CuentaCorrienteRemote extends Remote{
+public interface TDACuentaCorriente extends Remote{
 
 }

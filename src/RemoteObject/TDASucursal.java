@@ -5,7 +5,7 @@ import java.rmi.RemoteException;
 
 import DTO.SucursalDTO;
 
-public interface SucursalRemote extends Remote {
+public interface TDASucursal extends Remote {
 
 	
 	public boolean verificarSucursal(int parseInt)  throws RemoteException;

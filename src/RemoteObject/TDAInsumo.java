@@ -5,7 +5,7 @@ import java.rmi.RemoteException;
 
 import DTO.InsumoDTO;
 
-public interface InsumoRemote extends Remote {
+public interface TDAInsumo extends Remote {
 
 	
 	public boolean verificarInsumo(int parseInt) throws RemoteException;
