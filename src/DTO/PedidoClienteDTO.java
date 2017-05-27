@@ -1,9 +1,14 @@
 package DTO;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class PedidoClienteDTO {
+public class PedidoClienteDTO implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8477013778409948994L;
 	private Long nroPedido;
 	private Date fechaGeneracion;
 	private Date fechaDespacho;

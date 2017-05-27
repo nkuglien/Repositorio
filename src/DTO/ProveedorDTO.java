@@ -1,8 +1,13 @@
 package DTO;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class ProveedorDTO {
+public class ProveedorDTO implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6023804909124510867L;
 	private long id;
 	private String nombre;
 	private List<InsumoProveedorDTO> insumos;

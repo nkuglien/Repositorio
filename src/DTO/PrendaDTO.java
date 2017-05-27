@@ -1,9 +1,14 @@
 package DTO;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class PrendaDTO {
+public class PrendaDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1383387810368523000L;
 	private Long codigo;
 	private String descripcion;
 	private Boolean enProduccion;

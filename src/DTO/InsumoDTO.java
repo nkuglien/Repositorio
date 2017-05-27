@@ -1,7 +1,13 @@
 package DTO;
 
-public class InsumoDTO {
+import java.io.Serializable;
 
+public class InsumoDTO implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 701547294209629418L;
 	private Long codigo;
 	private String descripcion;
 	private String nombre;

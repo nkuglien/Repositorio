@@ -1,8 +1,13 @@
 package DTO;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class SucursalDTO {
+public class SucursalDTO implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4222600544005409958L;
 	private Integer numero;
 	private String nombre;
 	private Integer horarioApertura;

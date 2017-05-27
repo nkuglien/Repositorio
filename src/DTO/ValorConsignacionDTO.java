@@ -1,8 +1,13 @@
 package DTO;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class ValorConsignacionDTO {
+public class ValorConsignacionDTO implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6134246974511202177L;
 	private Long id;
 	private float valor;
 	private String descripcion;
