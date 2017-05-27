@@ -12,11 +12,11 @@ public interface ClienteRemote extends Remote {
 	
 	public boolean verificarCliente(int parseInt) throws RemoteException;
 
-	public void altaCliente(ClienteDTO clienteDTO)throws RemoteException;
+	public ClienteDTO altaCliente(ClienteDTO clienteDTO)throws RemoteException;
 	
-	public void bajaCliente(int parseInt) throws RemoteException;
+	public ClienteDTO bajaCliente(long cuit) throws RemoteException;
 
-	public ClienteDTO solicitarClienteView(int parseInt) throws RemoteException;
+	public ClienteDTO modificarCliente(ClienteDTO clienteDTO)throws RemoteException;
 
-	public void modificarCliente(ClienteDTO cv, int parseInt)throws RemoteException;
+	public ClienteDTO buscarCliente(String cuit)throws RemoteException;
 }
