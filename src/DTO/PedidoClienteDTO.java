@@ -13,7 +13,7 @@ public class PedidoClienteDTO {
 	private Float subtotal;
 	private Float impuestos;
 	private Float total;
-	private EstadosPedidoCliente estado;
+	private EstadoPedidoCliente estado;
 	private String nota;
 	
 	public Long getNroPedido() {
@@ -76,10 +76,10 @@ public class PedidoClienteDTO {
 	public void setNota(String nota) {
 		this.nota = nota;
 	}
-	public EstadosPedidoCliente getEstado() {
+	public EstadoPedidoCliente getEstado() {
 		return estado;
 	}
-	public void setEstado(EstadosPedidoCliente estado) {
+	public void setEstado(EstadoPedidoCliente estado) {
 		this.estado = estado;
 	}
 

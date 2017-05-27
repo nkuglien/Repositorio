@@ -1,7 +1,6 @@
 package DTO;
 
 import java.io.Serializable;
-import java.util.Date;
 
 
 public class MovimientoCCDTO implements Serializable{

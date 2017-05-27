@@ -1,6 +1,6 @@
 package DTO;
 
-public enum EstadosPedidoCliente {
+public enum EstadoPedidoCliente {
 	CREADO, 	// por el cliente
 	VALIDADO,	// por sucursal
 	RECHAZADO,  // por sucursal

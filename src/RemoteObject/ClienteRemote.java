@@ -8,6 +8,7 @@ import DTO.ClienteDTO;
 
 public interface ClienteRemote extends Remote {
 
+	public List<ClienteDTO> getAllClientes() throws RemoteException;
 	
 	public boolean verificarCliente(int parseInt) throws RemoteException;
 
