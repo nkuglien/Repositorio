@@ -1,6 +1,7 @@
 package DTO;
 
 import java.io.Serializable;
+import java.util.Date;
 
 
 public class MovimientoCCDTO implements Serializable{
@@ -18,10 +19,10 @@ public class MovimientoCCDTO implements Serializable{
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getFecha() {
+	public Date getFecha() {
 		return fecha;
 	}
-	public void setFecha(String fecha) {
+	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
 	public Float getImporte() {
@@ -30,6 +31,6 @@ public class MovimientoCCDTO implements Serializable{
 	public void setImporte(Float importe) {
 		this.importe = importe;
 	}
-	private String fecha;
+	private Date fecha;
 	private Float importe;
 }

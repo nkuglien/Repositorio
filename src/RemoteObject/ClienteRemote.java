@@ -12,7 +12,7 @@ public interface ClienteRemote extends Remote {
 	
 	public boolean verificarCliente(int parseInt) throws RemoteException;
 
-	public void altaCliente(int parseInt, String text, String text2, int parseInt2, String text3)throws RemoteException;
+	public void altaCliente(ClienteDTO clienteDTO)throws RemoteException;
 	
 	public void bajaCliente(int parseInt) throws RemoteException;
 
