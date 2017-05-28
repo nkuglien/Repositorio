@@ -2,6 +2,7 @@ package RemoteObject;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.List;
 
 import DTO.InsumoDTO;
 
@@ -16,4 +17,6 @@ public interface TDAInsumo extends Remote {
 	public InsumoDTO solicitarInsumoView(int parseInt) throws RemoteException;
 
 	public InsumoDTO modificarInsumo(InsumoDTO insumo) throws RemoteException;
+
+	public List<InsumoDTO> getAllInsumos() throws RemoteException;
 }

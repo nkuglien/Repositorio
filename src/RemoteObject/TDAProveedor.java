@@ -4,6 +4,8 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
 
+import DTO.InsumoDTO;
+import DTO.InsumoProveedorDTO;
 import DTO.ProveedorDTO;
 
 public interface TDAProveedor extends Remote {
@@ -19,4 +21,6 @@ public interface TDAProveedor extends Remote {
 	public void modificarProveedor(ProveedorDTO pv, int parseInt) throws RemoteException;
 
 	public List<ProveedorDTO> getAllProveedores() throws RemoteException;
+
+	public InsumoProveedorDTO asociarInsumo(ProveedorDTO proveedor, InsumoDTO insumo, Float precio) throws RemoteException;
 }
