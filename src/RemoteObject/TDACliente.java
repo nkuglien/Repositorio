@@ -10,8 +10,6 @@ public interface TDACliente extends Remote {
 
 	public List<ClienteDTO> getAllClientes() throws RemoteException;
 	
-	public boolean verificarCliente(int parseInt) throws RemoteException;
-
 	public ClienteDTO altaCliente(ClienteDTO clienteDTO)throws RemoteException;
 	
 	public ClienteDTO bajaCliente(long cuit) throws RemoteException;
