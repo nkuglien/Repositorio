@@ -12,16 +12,14 @@ public class CuentaCorrienteDTO implements Serializable {
 	private static final long serialVersionUID = 7550597278642498734L;
 
 	private Long id;
-	private ClienteDTO cliente;
 	private Float saldo;
 	private Float limiteCredito;
 	private List<MovimientoCCDTO> movimientos;
 
-	public CuentaCorrienteDTO(Float saldo, Float limiteCredito, ClienteDTO clienteDTO) {
+	public CuentaCorrienteDTO(Float saldo, Float limiteCredito, List<MovimientoCCDTO> movimientos) {
 		super();
 		this.saldo = saldo;
 		this.limiteCredito = limiteCredito;
-		this.cliente = clienteDTO;
 		this.movimientos = new ArrayList<>();
 	}
 
@@ -55,14 +53,6 @@ public class CuentaCorrienteDTO implements Serializable {
 
 	public void setLimiteCredito(Float limiteCredito) {
 		this.limiteCredito = limiteCredito;
-	}
-
-	public ClienteDTO getCliente() {
-		return cliente;
-	}
-
-	public void setCliente(ClienteDTO cliente) {
-		this.cliente = cliente;
 	}
 
 }

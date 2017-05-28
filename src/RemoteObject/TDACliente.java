@@ -12,7 +12,7 @@ public interface TDACliente extends Remote {
 	
 	public ClienteDTO altaCliente(ClienteDTO clienteDTO)throws RemoteException;
 	
-	public ClienteDTO bajaCliente(long cuit) throws RemoteException;
+	public ClienteDTO bajaCliente(String cuit) throws RemoteException;
 
 	public ClienteDTO modificarCliente(ClienteDTO clienteDTO)throws RemoteException;
 
