@@ -15,6 +15,14 @@ public class SucursalDTO implements Serializable {
 	private String direccion;
 	private List<ClienteDTO> clientes;
 
+	public SucursalDTO(int parseInt, String text, int parseInt2, int parseInt3, String direccion2) {
+		this.setNumero(parseInt);
+		this.setNombre(text);
+		this.setHorarioApertura(parseInt2);
+		this.setHorarioCierre(parseInt3);
+		this.setDireccion(direccion2);
+	}
+
 	public Integer getNumero() {
 		return numero;
 	}

@@ -16,4 +16,6 @@ public interface TDAInsumo extends Remote {
 	public InsumoDTO solicitarInsumoView(int parseInt) throws RemoteException;
 
 	public InsumoDTO modificarInsumo(InsumoDTO insumo) throws RemoteException;
+
+	public boolean verificarInsumo(int parseInt)throws RemoteException;
 }

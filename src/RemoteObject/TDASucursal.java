@@ -10,7 +10,7 @@ public interface TDASucursal extends Remote {
 	
 	public boolean verificarSucursal(int parseInt)  throws RemoteException;
 
-	public void altaSucursal(int parseInt, String text, int parseInt2, int parseInt3) throws RemoteException;
+	public void altaSucursal(SucursalDTO sv) throws RemoteException;
 
 	public void bajaSucursal(int parseInt)  throws RemoteException;
 
@@ -18,5 +18,5 @@ public interface TDASucursal extends Remote {
 	public SucursalDTO solicitarSucursalView(int parseInt) throws RemoteException;
 
 
-	public void modificarSucursal(SucursalDTO sv, int parseInt) throws RemoteException;
+	public void modificarSucursal(SucursalDTO sv) throws RemoteException;
 }
