@@ -13,7 +13,7 @@ public interface TDAPrenda extends Remote {
 
 	public void bajaprenda(PrendaDTO prenda) throws RemoteException;
 
-	public PrendaDTO solicitarPrendaView(int parseInt) throws RemoteException;
+	public PrendaDTO solicitarPrendaView(Long codigo) throws RemoteException;
 
 	public void modificarPrenda(PrendaDTO prenda) throws RemoteException;
 
