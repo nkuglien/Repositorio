@@ -12,13 +12,13 @@ public interface TDAProveedor extends Remote {
 
 	public boolean verificarProveedor(int parseInt) throws RemoteException;
 
-	public void altaProveedor(int parseInt, String text) throws RemoteException;
+	public void altaProveedor(ProveedorDTO prov) throws RemoteException;
 
 	public void bajaProveedor(int parseInt) throws RemoteException;
 
 	public ProveedorDTO solicitarProveedorView(int parseInt) throws RemoteException;
 
-	public void modificarProveedor(ProveedorDTO pv, int parseInt) throws RemoteException;
+	public void modificarProveedor(ProveedorDTO pv) throws RemoteException;
 
 	public List<ProveedorDTO> getAllProveedores() throws RemoteException;
 
