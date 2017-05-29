@@ -1,7 +1,9 @@
 package DTO;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
+
 
 public class PrendaDTO implements Serializable {
 
@@ -11,9 +13,10 @@ public class PrendaDTO implements Serializable {
 	private static final long serialVersionUID = 1383387810368523000L;
 	private Long codigo;
 	private String descripcion;
-	private Boolean enProduccion;
-	private List<VariedadPrendaDTO> variedades;
-	private List<PrendaAreaProduccionDTO> areas;
+	private Boolean enProduccion = true;
+	private List<VariedadPrendaDTO> variedades = new ArrayList<VariedadPrendaDTO>();
+	private List<PrendaAreaProduccionDTO> areas= new ArrayList<PrendaAreaProduccionDTO>();
+	
 	public Long getCodigo() {
 		return codigo;
 	}
@@ -43,6 +46,10 @@ public class PrendaDTO implements Serializable {
 	}
 	public void setAreas(List<PrendaAreaProduccionDTO> areas) {
 		this.areas = areas;
+	}
+	public PrendaDTO toDTO() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
