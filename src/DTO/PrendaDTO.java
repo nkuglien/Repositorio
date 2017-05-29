@@ -47,9 +47,10 @@ public class PrendaDTO implements Serializable {
 	public void setAreas(List<PrendaAreaProduccionDTO> areas) {
 		this.areas = areas;
 	}
-	public PrendaDTO toDTO() {
-		// TODO Auto-generated method stub
-		return null;
+
+	public String toString() {
+		return descripcion;
 	}
+	
 	
 }
