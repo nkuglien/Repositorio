@@ -1,11 +1,16 @@
 package DTO;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 
-public class AreaProduccionDTO {
+public class AreaProduccionDTO implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4190130090863789277L;
 	private Integer codigo;
 	private String nombre;
 	private Map<String, Boolean> lineas;
@@ -54,6 +59,10 @@ public class AreaProduccionDTO {
 
 	public void setOrdenesEspera(List<OrdenProduccionEsperaDTO> ordenesEspera) {
 		this.ordenesEspera = ordenesEspera;
+	}
+	
+	public String toString() {
+		return nombre;
 	}
 
 }
