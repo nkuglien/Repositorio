@@ -43,4 +43,8 @@ public class ItemPedidoClienteDTO implements Serializable {
 	public void setPrecioItem(Float precioItem) {
 		this.precioItem = precioItem;
 	}
+	
+	public String toString() {
+		return item.getPrenda().getDescripcion() + " " + item.toString() + "  || Precio: " + precioItem + "  || Cant.: " + cantidad;
+	}
 }
