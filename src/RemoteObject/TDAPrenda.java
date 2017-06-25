@@ -26,4 +26,6 @@ public interface TDAPrenda extends Remote {
 	
 	public List<AreaProduccionDTO> getAllAreasProduccion() throws RemoteException;
 
+	public void bajaVariedadPrenda(VariedadPrendaDTO variedadPrendaDTO) throws RemoteException;
+
 }
