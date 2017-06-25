@@ -1,6 +1,9 @@
 package DTO;
 
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -86,6 +89,20 @@ public class PedidoClienteDTO implements Serializable {
 	}
 	public void setEstado(EstadoPedidoCliente estado) {
 		this.estado = estado;
+	}
+	
+	public String toString() {
+		DateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
+		DateFormat formatter = new SimpleDateFormat("MMM dd, yyyy");
+		Date convertedDate = null;
+		try {
+			convertedDate = parser.parse(fechaGeneracion.toString());
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String output = formatter.format(convertedDate); 
+		return "Cliente: " + cliente.getNombre() + "  ||  Fecha: " + output + "  ||  Estado: " + estado;
 	}
 
 }
