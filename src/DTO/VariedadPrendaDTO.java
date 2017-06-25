@@ -94,7 +94,7 @@ public class VariedadPrendaDTO implements Serializable {
 	}
 
 	public String toString() {
-		return color + " " + talle;
+		return color + " " + talle + " $" + precioVentaActual;
 	}
 	
 }
