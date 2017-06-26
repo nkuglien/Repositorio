@@ -45,6 +45,8 @@ public class ItemPedidoClienteDTO implements Serializable {
 	}
 	
 	public String toString() {
-		return item.getPrenda().getDescripcion() + " " + item.toString() + "  || Precio: " + precioItem + "  || Cant.: " + cantidad;
+		String s = "";
+		if(item!=null) s = item.getPrenda().getDescripcion() + " " + item.toString() + "  || Precio: " + precioItem + "  || Cant.: " + cantidad;
+		return s;
 	}
 }
