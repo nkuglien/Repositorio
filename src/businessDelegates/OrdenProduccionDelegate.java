@@ -35,8 +35,19 @@ public class OrdenProduccionDelegate {
 		}
 	}
 
-	//public List<OrdenProduccionDTO> getAll() throws RemoteException {
-		//return remote.getAllOrdenes();
-	//}
+	public List<OrdenProduccionDTO> getAll() throws RemoteException{
+		return remote.getAll();
+	};
+	
+	public OrdenProduccionDTO ponerAProducir(Long idOrdenProduccion)throws RemoteException{
+		
+		return remote.ponerAProducir(idOrdenProduccion);
+		
+	};
+	
+	public OrdenProduccionDTO finProduccion(Long idOrdenProduccion) throws RemoteException{
+		return remote.finProduccion(idOrdenProduccion);
+	};
+
 
 }

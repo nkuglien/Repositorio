@@ -96,5 +96,9 @@ public class VariedadPrendaDTO implements Serializable {
 	public String toString() {
 		return color + " " + talle + " $" + precioVentaActual;
 	}
+
+	public String getPrendaString() {
+		return prenda.getDescripcion();
+	}
 	
 }
