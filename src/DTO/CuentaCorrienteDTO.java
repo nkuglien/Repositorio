@@ -20,7 +20,7 @@ public class CuentaCorrienteDTO implements Serializable {
 		super();
 		this.saldo = saldo;
 		this.limiteCredito = limiteCredito;
-		this.movimientos = new ArrayList<>();
+		this.movimientos = new ArrayList<MovimientoCCDTO>();
 	}
 
 	public Long getId() {

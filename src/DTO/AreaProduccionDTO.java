@@ -14,7 +14,7 @@ public class AreaProduccionDTO implements Serializable{
 	private Integer codigo;
 	private String nombre;
 	private Map<String, Boolean> lineas;
-	private List<OrdenProduccionEsperaDTO> ordenesEspera;
+	private List<OrdenProduccionDTO> ordenesEspera;
 	
 	
 	public void agregarLinea(String codigoLinea, boolean isDisponible) {
@@ -53,11 +53,11 @@ public class AreaProduccionDTO implements Serializable{
 		this.lineas = lineas;
 	}
 
-	public List<OrdenProduccionEsperaDTO> getOrdenesEspera() {
+	public List<OrdenProduccionDTO> getOrdenesEspera() {
 		return ordenesEspera;
 	}
 
-	public void setOrdenesEspera(List<OrdenProduccionEsperaDTO> ordenesEspera) {
+	public void setOrdenesEspera(List<OrdenProduccionDTO> ordenesEspera) {
 		this.ordenesEspera = ordenesEspera;
 	}
 	
