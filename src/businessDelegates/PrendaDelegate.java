@@ -63,6 +63,7 @@ private static PrendaDelegate instancia;
 		return remoto.getAllPrendas();
 	}
 	
+		
 	public List<AreaProduccionDTO> getAllAreasProduccion() throws RemoteException {
 		return remoto.getAllAreasProduccion();
 	}

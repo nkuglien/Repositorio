@@ -13,11 +13,13 @@ public class VariedadPrendaDTO implements Serializable {
 	private static final long serialVersionUID = -4020862556485964092L;
 	private Long id;
 	private PrendaDTO prenda;
+	private String prendaString;
 	private String talle;
 	private String color;
 	private Boolean enProduccion;
 	private List<ItemInsumoDTO> insumos;
 	private Integer cantidadProduccionFija;
+	private Integer stock;
 	private Float costoProduccionActual;
 	private Float precioVentaActual;
 
@@ -99,6 +101,18 @@ public class VariedadPrendaDTO implements Serializable {
 
 	public String getPrendaString() {
 		return prenda.getDescripcion();
+	}
+
+	public Integer getStock() {
+		return stock;
+	}
+
+	public void setStock(Integer stock) {
+		this.stock = stock;
+	}
+
+	public void setPrendaString(String prendaString) {
+		this.prendaString = prendaString;
 	}
 	
 }
