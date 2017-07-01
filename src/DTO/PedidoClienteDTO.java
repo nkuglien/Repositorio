@@ -24,7 +24,7 @@ public class PedidoClienteDTO implements Serializable {
 	private List<ReservaVariedadPrendaDTO> reservas;
 	
 	public PedidoClienteDTO() {
-		this.items = new ArrayList<>();
+		this.items = new ArrayList<ItemPedidoClienteDTO>();
 	}
 	
 	public Long getNroPedido() {
