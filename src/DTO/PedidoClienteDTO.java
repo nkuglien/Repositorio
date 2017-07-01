@@ -23,6 +23,7 @@ public class PedidoClienteDTO implements Serializable {
 	private Float total;
 	private EstadoPedidoCliente estado;
 	private String nota;
+	private List<ReservaVariedadPrendaDTO> reservas;
 	
 	public Long getNroPedido() {
 		return nroPedido;
@@ -103,6 +104,12 @@ public class PedidoClienteDTO implements Serializable {
 		}
 		String output = formatter.format(convertedDate); 
 		return "Cliente: " + cliente.getNombre() + "  ||  Fecha: " + output + "  ||  Estado: " + estado;
+	}
+	public List<ReservaVariedadPrendaDTO> getReservas() {
+		return reservas;
+	}
+	public void setReservas(List<ReservaVariedadPrendaDTO> reservas) {
+		this.reservas = reservas;
 	}
 
 }

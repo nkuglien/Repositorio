@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 
+
 public class OrdenProduccionDTO implements Serializable {
 
 	/**
@@ -17,8 +18,7 @@ public class OrdenProduccionDTO implements Serializable {
 	private String variedadesString;
 	private String prenda;
 	private List<VariedadPrendaDTO> variedades;
-	
-	
+	private List<PedidoClienteDTO> pedidoCliente;
 		
 	
 	
