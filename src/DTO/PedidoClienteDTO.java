@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -23,6 +24,10 @@ public class PedidoClienteDTO implements Serializable {
 	private Float total;
 	private EstadoPedidoCliente estado;
 	private String nota;
+	
+	public PedidoClienteDTO() {
+		this.items = new ArrayList<>();
+	}
 	
 	public Long getNroPedido() {
 		return nroPedido;
@@ -91,6 +96,7 @@ public class PedidoClienteDTO implements Serializable {
 		this.estado = estado;
 	}
 	
+	@Override
 	public String toString() {
 		DateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
 		DateFormat formatter = new SimpleDateFormat("MMM dd, yyyy");

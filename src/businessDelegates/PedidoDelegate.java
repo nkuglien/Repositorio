@@ -2,15 +2,9 @@ package businessDelegates;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
-import java.util.ArrayList;
 import java.util.List;
 
-import DTO.ClienteDTO;
-import DTO.CuentaCorrienteDTO;
-import DTO.InsumoDTO;
-import DTO.MovimientoCCDTO;
 import DTO.PedidoClienteDTO;
-import RemoteObject.TDACliente;
 import RemoteObject.TDAPedido;
 
 public class PedidoDelegate {
@@ -36,6 +30,14 @@ public class PedidoDelegate {
 
 	public List<PedidoClienteDTO> getAllPedidos() throws RemoteException {
 		return remoto.getAllPedidos();
+	}
+	
+	public PedidoClienteDTO cargarPedidoCliente(PedidoClienteDTO dto) throws RemoteException {
+		return remoto.cargarPedidoCliente(dto);
+	}
+
+	public List<PedidoClienteDTO> getPedidosByCliente(String cuit) throws RemoteException {
+		return remoto.getPedidosByCliente(cuit);
 	}
 
 }
