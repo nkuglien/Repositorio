@@ -4,6 +4,7 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.util.List;
 
+import DTO.EstadoPedidoCliente;
 import DTO.PedidoClienteDTO;
 import RemoteObject.TDAPedido;
 
@@ -38,6 +39,10 @@ public class PedidoDelegate {
 
 	public List<PedidoClienteDTO> getPedidosByCliente(String cuit) throws RemoteException {
 		return remoto.getPedidosByCliente(cuit);
+	}
+
+	public void cambiarEstadoPedido(Long nroPedido, EstadoPedidoCliente estado) throws RemoteException {
+		remoto.cambiarEstadoPedido(nroPedido, estado);
 	}
 
 }
