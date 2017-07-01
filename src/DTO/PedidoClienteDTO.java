@@ -1,9 +1,7 @@
 package DTO;
 
 import java.io.Serializable;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -23,6 +21,11 @@ public class PedidoClienteDTO implements Serializable {
 	private Float total;
 	private EstadoPedidoCliente estado;
 	private String nota;
+	private List<ReservaVariedadPrendaDTO> reservas;
+	
+	public PedidoClienteDTO() {
+		this.items = new ArrayList<ItemPedidoClienteDTO>();
+	}
 	
 	public Long getNroPedido() {
 		return nroPedido;
@@ -91,18 +94,15 @@ public class PedidoClienteDTO implements Serializable {
 		this.estado = estado;
 	}
 	
+	@Override
 	public String toString() {
-		DateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
-		DateFormat formatter = new SimpleDateFormat("MMM dd, yyyy");
-		Date convertedDate = null;
-		try {
-			convertedDate = parser.parse(fechaGeneracion.toString());
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		String output = formatter.format(convertedDate); 
-		return "Cliente: " + cliente.getNombre() + "  ||  Fecha: " + output + "  ||  Estado: " + estado;
+		return "Cliente: " + cliente.getNombre() + "  ||   Estado: " + estado;
+	}
+	public List<ReservaVariedadPrendaDTO> getReservas() {
+		return reservas;
+	}
+	public void setReservas(List<ReservaVariedadPrendaDTO> reservas) {
+		this.reservas = reservas;
 	}
 
 }

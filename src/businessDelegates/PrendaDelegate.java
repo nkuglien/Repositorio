@@ -73,4 +73,9 @@ private static PrendaDelegate instancia;
 		remoto.bajaVariedadPrenda(variedadPrendaDTO);
 	}
 
+
+	public VariedadPrendaDTO buscarVariedad(long idVariedad) throws RemoteException {
+		return remoto.buscarVariedad(idVariedad);
+	}
+
 }
