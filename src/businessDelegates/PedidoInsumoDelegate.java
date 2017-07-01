@@ -2,6 +2,7 @@ package businessDelegates;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
+import java.util.Date;
 import java.util.List;
 
 import DTO.PedidoInsumoDTO;
@@ -32,8 +33,11 @@ public class PedidoInsumoDelegate {
 	public List<PedidoInsumoDTO> getAllPedidos() throws RemoteException {
 		return remoto.getAllPedidos();
 	}
-	//public void completarPedido(int idPedido, int idProveedor, date fechaDespacho, Float precioUnidad) throws RemoteException {
-	//	return remoto.getAllPedidos();
-	//}
+	public void completarPedido(Long idPedido, Long idProveedor, Date fechaDespacho, Float precioUnidad) throws RemoteException {
+		 remoto.completarPedido(idPedido, idProveedor, fechaDespacho, precioUnidad);
+	}
+	public void terminarPedido(Long idPedido, Date fechaDespachoReal) throws RemoteException {
+		 remoto.terminarPedido(idPedido, fechaDespachoReal);
+	}
 	
 }
