@@ -15,6 +15,7 @@ public class InsumoDTO implements Serializable {
 	private String nombre;
 	private Integer stockMinimo;
 	private Integer cantCompra;
+	private Integer stock;
 
 
 	public Long getCodigo() {
@@ -68,6 +69,14 @@ public class InsumoDTO implements Serializable {
 	@Override
 	public String toString() {
 		return nombre;
+	}
+
+	public Integer getStock() {
+		return stock;
+	}
+
+	public void setStock(Integer stock) {
+		this.stock = stock;
 	}
 	
 }
