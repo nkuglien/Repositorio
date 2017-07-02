@@ -6,13 +6,12 @@ import java.util.Date;
 
 public class MovimientoCCDTO implements Serializable{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -5648585853096245969L;
 
-	
 	private Long id;
+	private Date fecha;
+	private Float importe;
+	
 	public Long getId() {
 		return id;
 	}
@@ -31,6 +30,5 @@ public class MovimientoCCDTO implements Serializable{
 	public void setImporte(Float importe) {
 		this.importe = importe;
 	}
-	private Date fecha;
-	private Float importe;
+	
 }

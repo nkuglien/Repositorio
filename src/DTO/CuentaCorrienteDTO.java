@@ -1,7 +1,6 @@
 package DTO;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CuentaCorrienteDTO implements Serializable {
@@ -20,7 +19,7 @@ public class CuentaCorrienteDTO implements Serializable {
 		super();
 		this.saldo = saldo;
 		this.limiteCredito = limiteCredito;
-		this.movimientos = new ArrayList<MovimientoCCDTO>();
+		this.movimientos = movimientos;
 	}
 
 	public Long getId() {
