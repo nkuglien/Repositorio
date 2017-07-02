@@ -22,10 +22,12 @@ public class OrdenProduccionDTO implements Serializable {
 		
 	
 	
-	public OrdenProduccionDTO(Long id2, Date fecha2, String estado2, List<VariedadPrendaDTO> dtoPrenda) {
+	public OrdenProduccionDTO(Long id2, Date fecha2, String estado2,String variedadesPrenda2, String prenda2, List<VariedadPrendaDTO> dtoPrenda) {
 		id=id2;
 		fecha=fecha2;
 		estado=estado2;
+		
+		
 		variedades=dtoPrenda;
 	}
 	public Long getId() {
@@ -53,20 +55,25 @@ public class OrdenProduccionDTO implements Serializable {
 		this.variedades = variedades;
 	}
 	
+	
 	public String getVariedadesString() {
-		String retorno="";
-		boolean esPrimero=true;
-		for(VariedadPrendaDTO var : variedades){
-			if(!esPrimero) retorno=retorno+"<br/>";
-			else esPrimero = false;
-			retorno=retorno + "Color: "+var.getColor()+"  Talle: "+ var.getTalle();
-		}
-		return retorno;
+		return variedadesString;
+	}
+	public void setVariedadesString(String variedadesString) {
+		this.variedadesString = variedadesString;
+	}
+	public List<PedidoClienteDTO> getPedidoCliente() {
+		return pedidoCliente;
+	}
+	public void setPedidoCliente(List<PedidoClienteDTO> pedidoCliente) {
+		this.pedidoCliente = pedidoCliente;
+	}
+	public void setPrenda(String prenda) {
+		this.prenda = prenda;
+	}
+	public String getPrenda() {
+		return prenda;
 	}
 	
-	public String getPrenda() {		
-		
-		return variedades.get(0).getPrendaString();
-	}
 	
 }

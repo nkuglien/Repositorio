@@ -20,10 +20,14 @@ public class PedidoInsumoDTO implements Serializable {
 	private String insumo;
 	private int cantidad;
 	private Float precioUnidad;
+	private String idLote;
+	private String posicion;
+	private String disponible;
+	
 	
 	
 	public PedidoInsumoDTO(Long id2, String proveedor2, Date fechaGeneracion2, Date fechaDespacho2, Date fechaDespachoReal2,
-			String estado2, String insumo2, int cantidad2, Float precioUnidad2) {
+			String estado2, String insumo2, int cantidad2, Float precioUnidad2,String idLote2, String posicion2, String disponible2 ) {
 		id=id2;
 		proveedor=proveedor2;
 		fechaDespacho=fechaDespacho2;
@@ -33,6 +37,30 @@ public class PedidoInsumoDTO implements Serializable {
 		insumo=insumo2;
 		cantidad=cantidad2;
 		precioUnidad=precioUnidad2;
+		idLote=idLote2;
+		posicion=posicion2;
+		disponible=disponible2;
+	}
+	
+	public String getIdLote() {
+		return idLote;
+	}
+
+	public void setIdLote(String idLote) {
+		this.idLote = idLote;
+	}
+
+	public String getPosicion() {
+		return posicion;
+	}
+	public void setPosicion(String posicion) {
+		this.posicion = posicion;
+	}
+	public String getDisponible() {
+		return disponible;
+	}
+	public void setDisponible(String disponible) {
+		this.disponible = disponible;
 	}
 	public Long getId() {
 		return id;
