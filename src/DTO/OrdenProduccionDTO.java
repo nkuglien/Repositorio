@@ -17,18 +17,20 @@ public class OrdenProduccionDTO implements Serializable {
 	private String estado;
 	private String variedadesString;
 	private String prenda;
+	private String tipo;
 	private List<VariedadPrendaDTO> variedades;
 	private List<PedidoClienteDTO> pedidoCliente;
 		
 	
 	
-	public OrdenProduccionDTO(Long id2, Date fecha2, String estado2,String variedadesPrenda2, String prenda2, List<VariedadPrendaDTO> dtoPrenda) {
+	public OrdenProduccionDTO(Long id2, Date fecha2, String estado2,String variedadesPrenda2, String prenda2, List<VariedadPrendaDTO> dtoPrenda, String tipo2) {
 		id=id2;
 		fecha=fecha2;
 		estado=estado2;
 		variedadesString= variedadesPrenda2;
 		prenda=prenda2;		
 		variedades=dtoPrenda;
+		tipo=tipo2;
 	}
 	public Long getId() {
 		return id;
@@ -73,6 +75,13 @@ public class OrdenProduccionDTO implements Serializable {
 	}
 	public String getPrenda() {
 		return prenda;
+	}
+	public String getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 	
 	
