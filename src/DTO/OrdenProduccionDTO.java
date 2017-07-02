@@ -26,8 +26,8 @@ public class OrdenProduccionDTO implements Serializable {
 		id=id2;
 		fecha=fecha2;
 		estado=estado2;
-		
-		
+		variedadesString= variedadesPrenda2;
+		prenda=prenda2;		
 		variedades=dtoPrenda;
 	}
 	public Long getId() {
