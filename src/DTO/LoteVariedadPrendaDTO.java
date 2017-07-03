@@ -16,6 +16,7 @@ public class LoteVariedadPrendaDTO implements Serializable{
 	private Float costoProduccion;
 	private int cantidad;
 	private int cantDisponible;
+	private String posicion;
 	
 	
 	public LoteVariedadPrendaDTO(Long id, String pos, int cantidad2, Integer cantDisponible2, VariedadPrendaDTO variedadDto,
@@ -27,8 +28,12 @@ public class LoteVariedadPrendaDTO implements Serializable{
 		setCostoProduccion(costoProduccion2);
 		setCantDisponible(cantDisponible2);
 		setCantidad(cantidad2);
+		setPosicion(pos);
 		
 	}
+
+
+	
 
 
 	public Long getId() {
@@ -98,6 +103,22 @@ public class LoteVariedadPrendaDTO implements Serializable{
 
 	public void setCantDisponible(int cantDisponible) {
 		this.cantDisponible = cantDisponible;
+	}
+
+
+
+
+
+	public String getPosicion() {
+		return posicion;
+	}
+
+
+
+
+
+	public void setPosicion(String posicion) {
+		this.posicion = posicion;
 	}
 
 
