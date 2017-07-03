@@ -9,6 +9,7 @@ public enum EstadoPedidoCliente implements Serializable {
 	RECHAZADO,  // por sucursal
 	ACEPTADO, 	// por el cliente
 	CANCELADO,  // por el cliente
-	COMPLETO 	// listo para despacho
-
+	COMPLETO, 	// listo para despacho
+	DESPACHADO  // por la empresa
+	
 }
