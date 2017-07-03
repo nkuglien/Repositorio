@@ -78,4 +78,9 @@ private static PrendaDelegate instancia;
 		return remoto.buscarVariedad(idVariedad);
 	}
 
+
+	public Object getPrendasVigentes() throws RemoteException {
+		return remoto.getPrendasVigentes();
+	}
+
 }

@@ -5,6 +5,7 @@ import java.rmi.RemoteException;
 import java.util.List;
 
 import DTO.EstadoPedidoCliente;
+import DTO.FacturaDTO;
 import DTO.PedidoClienteDTO;
 import RemoteObject.TDAPedido;
 
@@ -43,6 +44,10 @@ public class PedidoDelegate {
 
 	public void cambiarEstadoPedido(Long nroPedido, EstadoPedidoCliente estado) throws RemoteException {
 		remoto.cambiarEstadoPedido(nroPedido, estado);
+	}
+
+	public FacturaDTO obtenerFactura(Long nroPedido) throws RemoteException {
+		return remoto.obtenerFactura(nroPedido);
 	}
 
 }

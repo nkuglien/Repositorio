@@ -30,4 +30,6 @@ public interface TDAPrenda extends Remote {
 
 	VariedadPrendaDTO buscarVariedad(Long id) throws RemoteException;
 
+	public Object getPrendasVigentes() throws RemoteException;
+
 }
