@@ -6,6 +6,7 @@ import java.util.List;
 
 
 
+
 public class OrdenProduccionDTO implements Serializable {
 
 	/**
@@ -23,14 +24,24 @@ public class OrdenProduccionDTO implements Serializable {
 		
 	
 	
-	public OrdenProduccionDTO(Long id2, Date fecha2, String estado2,String variedadesPrenda2, String prenda2, List<VariedadPrendaDTO> dtoPrenda, String tipo2) {
+	public OrdenProduccionDTO(Long id2, Date fecha2, String estado2, String prenda2, List<VariedadPrendaDTO> dtoPrenda, String tipo2) {
 		id=id2;
 		fecha=fecha2;
-		estado=estado2;
-		variedadesString= variedadesPrenda2;
+		estado=estado2;		
 		prenda=prenda2;		
 		variedades=dtoPrenda;
 		tipo=tipo2;
+		
+		String prendaString="";
+		boolean esPrimero=true;
+		for(VariedadPrendaDTO var : variedades){
+			if(!esPrimero) prendaString=prendaString+"<br/>";
+			else esPrimero = false;
+			prendaString=prendaString + "Color: "+var.getColor()+"  Talle: "+ var.getTalle()+"  Cant: "+var.getCantidadProduccionFija();
+		}
+		variedadesString= prendaString;
+		
+		
 	}
 	public Long getId() {
 		return id;
