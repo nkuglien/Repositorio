@@ -7,6 +7,7 @@ import java.rmi.RemoteException;
 import java.util.List;
 
 import DTO.ClienteDTO;
+import DTO.LoteVariedadPrendaDTO;
 import DTO.OrdenProduccionDTO;
 import RemoteObject.TDACliente;
 import RemoteObject.TDAOrdenProduccion;
@@ -47,6 +48,11 @@ public class OrdenProduccionDelegate {
 	
 	public OrdenProduccionDTO finProduccion(Long idOrdenProduccion) throws RemoteException{
 		return remote.finProduccion(idOrdenProduccion);
+	}
+
+	public List<LoteVariedadPrendaDTO> getLotes(Long idOrdenProduccion) throws RemoteException {
+		return remote.getLotes(idOrdenProduccion);
+		
 	};
 
 

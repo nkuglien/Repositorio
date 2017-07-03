@@ -4,6 +4,7 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
 
+import DTO.LoteVariedadPrendaDTO;
 import DTO.OrdenProduccionDTO;
 
 
@@ -14,6 +15,8 @@ public interface TDAOrdenProduccion extends Remote{
 	public OrdenProduccionDTO ponerAProducir(Long idOrdenProduccion)throws RemoteException;
 	
 	public OrdenProduccionDTO finProduccion(Long idOrdenProduccion) throws RemoteException;
+
+	public List<LoteVariedadPrendaDTO> getLotes(Long idOrdenProduccion)throws RemoteException;
 
 	
 }
